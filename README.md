@@ -1,5 +1,6 @@
 # vim-tmux-configs
 
+## Install
 pathogen
 
 https://github.com/tpope/vim-pathogen
