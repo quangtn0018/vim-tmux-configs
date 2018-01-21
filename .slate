@@ -18,16 +18,16 @@ bind up:ctrl;alt;cmd push up bar-resize:screenSizeY
 # bind right:ctrl     focus right
 # bind up:ctrl        focus up
 # bind down:ctrl      focus down
-bind tab:alt;cmd    focus behind
+# bind tab:alt;cmd    focus behind
 
-bind h:cmd;shift    focus left
-bind j:cmd;shift    focus down
-bind k:cmd;shift    focus up
-bind l:cmd;shift    focus right
+# bind h:cmd;shift    focus left
+# bind j:cmd;shift    focus down
+# bind k:cmd;shift    focus up
+# bind l:cmd;shift    focus right
 
 # Bind slate application switcher
-#bind tab:cmd        switch
-#bind tab:cmd;shift  switch
+# bind tab:cmd        switch
+# bind tab:cmd;shift  switch
 
 # Focusing Keys
 # bind 1:alt focus 'Google Chrome'
@@ -49,5 +49,6 @@ bind =:cmd;shift          focus 'Sublime Text'
 # bind -:cmd;alt            focus 'Atom'
 # bind =:cmd;alt            focus 'Evernote'
 bind [:cmd;alt            focus 'Google Chrome'
-bind ]:cmd;alt            focus 'IntelliJ IDEA'
+# bind ]:cmd;alt            focus 'IntelliJ IDEA'
+bind ]:cmd;alt            focus 'Code'
 bind backslash:cmd;alt    focus 'Xcode'
