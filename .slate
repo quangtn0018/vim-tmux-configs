@@ -1,0 +1,53 @@
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+# Window switching commands
+bind left:ctrl;alt;cmd    throw left resize
+bind right:ctrl;alt;cmd   throw right resize
+bind up:alt;cmd           push up bar-resize:screenSizeY/2
+bind down:alt;cmd         push down bar-resize:screenSizeY/2
+bind left:alt;cmd         push left bar-resize:screenSizeX/2
+bind right:alt;cmd        push right bar-resize:screenSizeX/2
+
+# Fullscreen an application
+bind up:ctrl;alt;cmd push up bar-resize:screenSizeY
+
+# Focusing commands
+# bind left:ctrl      focus left
+# bind right:ctrl     focus right
+# bind up:ctrl        focus up
+# bind down:ctrl      focus down
+bind tab:alt;cmd    focus behind
+
+bind h:cmd;shift    focus left
+bind j:cmd;shift    focus down
+bind k:cmd;shift    focus up
+bind l:cmd;shift    focus right
+
+# Bind slate application switcher
+#bind tab:cmd        switch
+#bind tab:cmd;shift  switch
+
+# Focusing Keys
+# bind 1:alt focus 'Google Chrome'
+# bind 2:alt focus 'IntelliJ IDEA'
+# bind 3:alt focus 'Xcode'
+# bind 4:alt focus 'Terminal'
+# bind 5:alt focus 'Evernote'
+# bind 6:alt focus ''
+# bind 8:alt focus 'Soundnode'
+#bind 7:cmd;shift    focus 'Spotify'
+#bind 8:cmd;shift    focus 'Vivaldi'
+bind 9:cmd;shift    focus 'Slack'
+bind 0:cmd;shift    focus 'Mail'
+
+# Additional bindings for conveniently accessing terminal
+bind -:cmd;shift          focus 'Terminal'
+bind =:cmd;shift          focus 'Sublime Text'
+
+# bind -:cmd;alt            focus 'Atom'
+# bind =:cmd;alt            focus 'Evernote'
+bind [:cmd;alt            focus 'Google Chrome'
+bind ]:cmd;alt            focus 'IntelliJ IDEA'
+bind backslash:cmd;alt    focus 'Xcode'
